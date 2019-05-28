@@ -8,4 +8,3 @@ x = pd.read_csv('tbl0.tsv', sep = '\t')
 
 ## Cantidad de registros por cada una de las letras
 x.groupby('_c1').count()['_c0']
-print(x) 
