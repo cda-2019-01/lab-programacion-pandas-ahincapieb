@@ -2,6 +2,7 @@
 ## Imprima los valores unicos e la columna _c4 de 
 ## de la tabla tbl1 en mayusculas
 ## Lectura del archivo
+import pandas as pd
 x1 = pd.read_csv('tbl1.tsv', sep = '\t')
 x1.head()
 ## Impresion valores unicos
