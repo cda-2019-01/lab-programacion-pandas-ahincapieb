@@ -3,5 +3,6 @@
 ## Leer archivo
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 ## Agregar columna
-x.groupby(['_c1'])['_c2'].sum()
+x['suma_c0_c2'] = x['_c0'] + x['_c2']
+x.head()
 
