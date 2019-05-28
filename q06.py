@@ -6,5 +6,5 @@ import numpy as np
 ## Leer archivo
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 ## Impresion suma _c2
-x.groupby('_c1').sum()['_c2']
+x = x.groupby('_c1').sum()['_c2']
 print(x)
