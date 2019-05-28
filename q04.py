@@ -11,4 +11,3 @@ for x in unicos:
     resultado.append(x.upper())
 resultado = sorted(resultado)
 resultado
-
