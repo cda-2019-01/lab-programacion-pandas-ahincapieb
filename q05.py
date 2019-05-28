@@ -3,6 +3,7 @@
 ## de la tabla tbl0
 ## Leer archivo
 import pandas as pd
+import numpy as np
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 ## Impresion suma _c2
 x.groupby('_c1').sum()['_c2']
