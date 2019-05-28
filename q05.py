@@ -5,5 +5,5 @@
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 x.head()
 ## Impresion suma _c2
-x.groupby(['_c1'])['_c2'].sum()
+x.groupby('_c1').sum()['_c2']
 
