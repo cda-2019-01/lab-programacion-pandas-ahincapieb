@@ -7,5 +7,5 @@ import numpy as np
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 ##
 ## Promedio de la _c2 por cada letra de la _c1
-x.groupby('_c1').mean()['_c2']
+x = x.groupby('_c1').mean()['_c2']
 print(x)
