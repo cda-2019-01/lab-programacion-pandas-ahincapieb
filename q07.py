@@ -6,4 +6,4 @@ import numpy as np
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 ## Agregar columna con la suma
 x['suma'] = x['_c0'] + x['_c2']
-
+print(x)
