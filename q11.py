@@ -3,6 +3,7 @@
 ## separada por ',' de los valores de la columna _c5a
 ## y _c5b (unidos por ':') de la tabla tbl2.tsv
 import pandas as pd
+import numpy as np
 ## Leer archivo
 x2 = pd.read_csv('tbl2.tsv', sep = '\t')
 ## Construccion de tabla
@@ -12,5 +13,5 @@ x2b = pd.DataFrame()
 x2b['_c0'] = x2temp.keys()
 x2b['lista'] = [elem for elem in x2temp]
 x2b['lista'] = [",".join(str(v) for v in sorted(elem)) for elem in x2b['lista']]
-x2b
+print(x2b)
 
