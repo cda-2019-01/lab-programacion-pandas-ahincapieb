@@ -5,5 +5,5 @@ import numpy as np
 ## Leer archivo
 x = pd.read_csv('tbl0.tsv', sep = '\t')
 ## Agregar columna con la suma
-x['suma'] = x['_c0'] + x['_c2']
+x = x['suma'] = x['_c0'] + x['_c2']
 print(x)
