@@ -9,3 +9,4 @@ x = pd.read_csv('tbl0.tsv', sep = '\t')
 ## Imprimir el maximo
 x.groupby ('_c1').max()['_c2']
 
+print(x)
