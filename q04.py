@@ -4,7 +4,6 @@
 ## Lectura del archivo
 import pandas as pd
 x1 = pd.read_csv('tbl1.tsv', sep = '\t')
-x1.head()
 ## Impresion valores unicos
 unicos = x1['_c4'].unique()
 resultado = []
